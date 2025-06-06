@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Reportar Sintomas ou Focos";
+}
+
+<h2 class="text-center mb-4 text-success">Reporte um Evento</h2>
+
+<form class="w-75 mx-auto" method="post" asp-action="Enviar">
+    <div class="mb-3">
+        <label for="tipo" class="form-label text-success">Tipo de Reporte</label>
+        <select class="form-select border-success" id="tipo" name="tipo">
+            <option value="foco">Foco de mosquito</option>
+            <option value="sintoma">Sintomas suspeitos</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="descricao" class="form-label text-success">Descrição</label>
+        <textarea class="form-control border-success" id="descricao" name="descricao" rows="4"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="bairro" class="form-label text-success">Bairro/Localização</label>
+        <input class="form-control border-success" type="text" name="bairro" />
+    </div>
+
+    <button type="submit" class="btn btn-sustentabilidade">Enviar Reporte</button>
+</form>

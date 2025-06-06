@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Início";
+}
+
+<div class="mt-5">
+    <!-- Banner com alerta -->
+    <div class="alert alert-danger text-center fs-5 shadow">
+        🚨 <strong>Risco alto de dengue na sua região!</strong> Mantenha-se protegido.
+    </div>
+
+    <!-- Slogan -->
+    <div class="text-center my-4">
+        <h1 class="display-4 text-success">BioSentinela</h1>
+        <p class="lead">Antecipe os riscos, proteja sua comunidade</p>
+    </div>
+
+    <!-- Menu principal -->
+    <div class="row text-center mt-4">
+        <div class="col-md-3 mb-4">
+            <a asp-controller="Prevencao" asp-action="Index" class="btn btn-outline-sustentabilidade w-100 py-3">
+                🛡️ Prevenção
+            </a>
+        </div>
+        <div class="col-md-3 mb-4">
+            <a asp-controller="Mapa" asp-action="Index" class="btn btn-outline-sustentabilidade w-100 py-3">
+                🗺️ Mapa de Risco
+            </a>
+        </div>
+        <div class="col-md-3 mb-4">
+            <a asp-controller="Alertas" asp-action="Index" class="btn btn-outline-sustentabilidade w-100 py-3">
+                📢 Alertas
+            </a>
+        </div>
+        <div class="col-md-3 mb-4">
+            <a asp-controller="Saude" asp-action="Index" class="btn btn-outline-sustentabilidade w-100 py-3">
+                ❤️ Minha Saúde
+            </a>
+        </div>
+    </div>
+
+    <!-- Chamada para ação -->
+    <div class="text-center mt-5">
+        <h5>Deseja acompanhar sua região ou atuar como agente?</h5>
+        <a asp-controller="Home" asp-action="Login" class="btn btn-sustentabilidade btn-lg mt-3 px-5">Entrar na Plataforma</a>
+    </div>
+</div>

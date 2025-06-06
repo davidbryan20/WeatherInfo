@@ -1,0 +1,25 @@
+﻿@model WeatherInfo_BioSentinela.Models.EstadoInfo
+
+@{
+    ViewData["Title"] = "Consulta de Clima e Risco";
+}
+
+<h2>Consulta de Clima e Riscos de Doenças</h2>
+
+<form asp-action="Verificar" method="post">
+    <div class="form-group">
+        <label for="estado">Selecione o Estado</label>
+        @Html.DropDownList("estado", ViewBag.Estados as SelectList, "-- Selecione --", new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Verificar</button>
+</form>
+
+@if (Model != null)
+{
+    <hr />
+    <h4>Resultado para: @Model.Estado</h4>
+    <p><strong>Clima:</strong> @Model.Clima</p>
+    <p><strong>Temperatura:</strong> @Model.Temperatura</p>
+    <p><strong>Riscos de Doenças:</strong> @Model.RiscoDeDoencas</p>
+}

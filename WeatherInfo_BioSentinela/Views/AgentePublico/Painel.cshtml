@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Painel do Agente Público";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Painel do Agente Público</h2>
+
+    <!-- Estatísticas -->
+    <div class="row text-center mb-4">
+        <div class="col-md-3">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Casos de Dengue</h5>
+                    <p class="card-text fs-3">1.205</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Leptospirose</h5>
+                    <p class="card-text fs-3">342</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Covid-19</h5>
+                    <p class="card-text fs-3">87</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Áreas Monitoradas</h5>
+                    <p class="card-text fs-3">12</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabela de Locais -->
+    <div class="mb-4">
+        <h4>Locais com Incidência de Doenças</h4>
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Região</th>
+                    <th>Doença</th>
+                    <th>Casos</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zona Sul - SP</td>
+                    <td>Dengue</td>
+                    <td>423</td>
+                    <td><span class="badge bg-danger">Crítico</span></td>
+                </tr>
+                <tr>
+                    <td>Niterói - RJ</td>
+                    <td>Leptospirose</td>
+                    <td>120</td>
+                    <td><span class="badge bg-warning text-dark">Alerta</span></td>
+                </tr>
+                <tr>
+                    <td>Belo Horizonte - MG</td>
+                    <td>Covid-19</td>
+                    <td>44</td>
+                    <td><span class="badge bg-info">Estável</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Relatórios -->
+    <div class="mb-4">
+        <h4>Relatórios Recentes</h4>
+        <ul class="list-group">
+            <li class="list-group-item">[01/06/2025] Aumento de casos de dengue em SP</li>
+            <li class="list-group-item">[28/05/2025] Alerta de enchente e riscos associados em RJ</li>
+            <li class="list-group-item">[24/05/2025] Situação controlada em Porto Alegre</li>
+        </ul>
+    </div>
+
+    <!-- Planos de Ação -->
+    <div class="mb-5">
+        <h4>Planos de Ação em Execução</h4>
+        <div class="card">
+            <div class="card-body">
+                <h5>Operação Limpeza contra o Aedes aegypti</h5>
+                <p><strong>Período:</strong> 01/06/2025 a 07/06/2025</p>
+                <p><strong>Regiões:</strong> Zona Sul e Zona Leste - SP</p>
+                <p><strong>Status:</strong> Em andamento</p>
+            </div>
+        </div>
+    </div>
+</div>

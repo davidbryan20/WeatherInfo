@@ -1,0 +1,49 @@
+﻿@model WeatherInfo_BioSentinela.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2 class="mb-4 text-center">Entrar na plataforma</h2>
+
+<form asp-action="Login" method="post" class="w-50 mx-auto">
+    <div class="mb-3">
+        <label asp-for="EmailOuCpf" class="form-label">CPF ou Email</label>
+        <input asp-for="EmailOuCpf" class="form-control" />
+        <span asp-validation-for="EmailOuCpf" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Senha" class="form-label">Senha</label>
+        <input asp-for="Senha" type="password" class="form-control" />
+        <span asp-validation-for="Senha" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TipoUsuario" class="form-label">Tipo de Usuário</label>
+        <select asp-for="TipoUsuario" class="form-select">
+            <option value="">-- Selecione --</option>
+            <option value="Cidadao" selected="@(Model.TipoUsuario == "Cidadao" ? "selected" : null)">Cidadão</option>
+            <option value="AgentePublico" selected="@(Model.TipoUsuario == "AgentePublico" ? "selected" : null)">Agente Público</option>
+        </select>
+        <span asp-validation-for="TipoUsuario" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger mt-3">
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <div>@error.ErrorMessage</div>
+            }
+        </div>
+    }
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

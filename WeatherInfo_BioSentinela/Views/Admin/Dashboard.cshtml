@@ -1,0 +1,50 @@
+﻿@model WeatherInfo_BioSentinela.Models.DashboardViewModel
+@{
+    ViewData["Title"] = "Painel do Agente Público";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">🛠️ Painel do Gestor Público</h2>
+
+    <p class="text-muted text-end">
+        Última atualização: @Model.UltimaAtualizacao.ToString("dd/MM/yyyy HH:mm")
+    </p>
+
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <h4>📊 Casos por Bairro</h4>
+            <ul class="list-group">
+                @foreach (var bairro in Model.CasosPorBairro)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        @bairro.Key
+                        <span class="badge bg-danger rounded-pill">@bairro.Value casos</span>
+                    </li>
+                }
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h4>⚠️ Níveis de Risco</h4>
+            <ul class="list-group">
+                @foreach (var risco in Model.NiveisDeRisco)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        @risco.Key
+                        <span class="badge bg-warning text-dark">@risco.Value</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h4>🚨 Alertas Ativos</h4>
+        <ul class="list-group">
+            @foreach (var alerta in Model.AlertasAtivos)
+            {
+                <li class="list-group-item">@alerta</li>
+            }
+        </ul>
+    </div>
+</div>
