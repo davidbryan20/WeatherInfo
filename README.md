@@ -1,85 +1,85 @@
-# BioSentinela - Plataforma de Saúde Climática
+# ğŸŒ Projeto BioSentinela â€“ Plataforma de SaÃºde ClimÃ¡tica
 
-## Visão Geral
-
-BioSentinela é uma plataforma inovadora que une ciência de dados, inteligência climática e vigilância epidemiológica para prever, alertar e mitigar riscos à saúde causados por mudanças climáticas. Nosso objetivo é proteger comunidades vulneráveis de ameaças como enchentes, ondas de calor e surtos epidemiológicos, combinando dados públicos e algoritmos inteligentes.
+Este projeto tem como objetivo o desenvolvimento da plataforma **BioSentinela** â€” uma soluÃ§Ã£o inovadora que une ciÃªncia de dados, inteligÃªncia climÃ¡tica e vigilÃ¢ncia epidemiolÃ³gica para prever, alertar e mitigar riscos Ã  saÃºde causados por mudanÃ§as climÃ¡ticas. O foco Ã© proteger comunidades vulnerÃ¡veis contra ameaÃ§as como enchentes, ondas de calor e surtos epidemiolÃ³gicos.
 
 ---
 
-## O Impacto Silencioso das Mudanças Climáticas na Saúde Pública
+## ğŸ“Œ DescriÃ§Ã£o Geral
 
-Mudanças climáticas representam uma ameaça direta à saúde pública. Enchentes aumentam a incidência de doenças como dengue e leptospirose, ondas de calor elevam casos de desidratação e óbitos, e secas agravam doenças respiratórias. Estes impactos afetam principalmente as populações mais vulneráveis das regiões menos favorecidas.
+A plataforma foi concebida com base em um sistema inteligente que integra diferentes frentes:
 
----
+- **PrevisÃ£o**: uso de Machine Learning para antecipaÃ§Ã£o de riscos.
+- **Monitoramento**: anÃ¡lise contÃ­nua de dados meteorolÃ³gicos, epidemiolÃ³gicos e socioeconÃ´micos.
+- **ComunicaÃ§Ã£o e EducaÃ§Ã£o**: emissÃ£o de alertas e orientaÃ§Ãµes prÃ¡ticas Ã  populaÃ§Ã£o.
 
-## Cenário Proposto
+BioSentinela busca reduzir a incidÃªncia de doenÃ§as relacionadas ao clima, salvar vidas, empoderar comunidades e otimizar o uso de recursos pÃºblicos. O projeto estÃ¡ alinhado com os **Objetivos de Desenvolvimento SustentÃ¡vel da ONU**, especialmente:
 
-BioSentinela foca na prevenção inteligente baseada em três frentes principais:
-
-- **Previsão**: uso de Machine Learning para antecipar riscos.
-- **Monitoramento**: coleta e análise de dados públicos epidemiológicos, meteorológicos e socioeconômicos.
-- **Comunicação e Educação**: emissão de alertas claros e orientações para a população.
-
----
-
-## Impactos da Solução Proposta
-
-Nossa plataforma visa:
-
-- Reduzir a incidência de doenças relacionadas ao clima.
-- Salvar vidas ao antecipar riscos.
-- Empoderar comunidades com informação.
-- Otimizar o uso dos recursos públicos.
-
-Além disso, o BioSentinela está alinhado com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, especialmente os ODS 3 (Saúde), 11 (Cidades Sustentáveis) e 13 (Ação Climática).
+- ODS 3 â€“ SaÃºde e Bem-Estar
+- ODS 11 â€“ Cidades e Comunidades SustentÃ¡veis
+- ODS 13 â€“ AÃ§Ã£o contra a MudanÃ§a Global do Clima
 
 ---
 
-## Público-Alvo
+## ğŸ§± Tecnologias Utilizadas
 
-- Oradores e líderes de comunidades em áreas de risco, que são os principais beneficiários.
-- Gestores públicos e profissionais de saúde, que podem usar os dados para tomar decisões estratégicas.
-
----
-
-## Demonstração de Recursos Esperados (Para Usuários Finais)
-
-A plataforma oferece para a comunidade:
-
-- Site e aplicativo responsivo.
-- Alertas personalizados de riscos climáticos e epidemiológicos.
-- Orientações práticas para prevenção.
-- Canal para reportar eventos e contribuir com dados em tempo real.
+- Machine Learning e Redes Neurais aplicados a Big Data
+- Fontes de dados pÃºblicas: INMET, DATASUS, IBGE
+- Interface Web responsiva
+- Futuras integraÃ§Ãµes com:
+  - Sensores IoT
+  - Chatbot com IA generativa
 
 ---
 
-## Tecnologias Utilizadas
+## ğŸ—ï¸ Arquitetura da SoluÃ§Ã£o
 
-- **Machine Learning e Redes Neurais** aplicados a Big Data de fontes como INMET, DATASUS e IBGE.
-- Interface web responsiva para acessibilidade.
-- Futuramente, integração com sensores IoT e chatbot com IA generativa.
-
----
-
-## Arquitetura da Solução
-
-1. **Coleta de Dados**: meteorológicos, epidemiológicos e socioeconômicos.
-2. **Ingestão e Armazenamento**: bases de dados atualizadas e organizadas.
-3. **Camada de Machine Learning**: algoritmos que realizam previsões de riscos.
-4. **Entrega de Informação**: dashboards, alertas e aplicativos para usuários e gestores.
+- **Coleta de Dados**: meteorolÃ³gicos, epidemiolÃ³gicos e socioeconÃ´micos.
+- **IngestÃ£o e Armazenamento**: bases de dados organizadas e atualizadas.
+- **Camada de Machine Learning**: algoritmos que realizam previsÃµes de riscos Ã  saÃºde.
+- **Entrega de InformaÃ§Ã£o**: dashboards, alertas e aplicativos voltados para a populaÃ§Ã£o e para gestores pÃºblicos.
 
 ---
 
-## Agradecimentos
+## ğŸ‘¥ PÃºblico-Alvo
 
-BioSentinela representa nossa visão de um futuro mais seguro e saudável. Acreditamos no poder da Ciência de Dados para transformar realidades e proteger quem mais precisa.
+- **Comunidades em Ã¡reas de risco**: beneficiadas diretamente por alertas e orientaÃ§Ãµes.
+- **Gestores pÃºblicos e profissionais da saÃºde**: apoiados com dados e previsÃµes estratÃ©gicas para tomada de decisÃ£o.
+
+---
+
+## ğŸ§ª DemonstraÃ§Ã£o de Recursos Esperados
+
+- Site e aplicativo responsivo
+- Alertas personalizados de riscos climÃ¡ticos e epidemiolÃ³gicos
+- OrientaÃ§Ãµes prÃ¡ticas de prevenÃ§Ã£o
+- Canal para reportar eventos e contribuir com dados em tempo real
+
+---
+
+## ğŸ‘¨â€ğŸ‘©â€ğŸ‘§â€ğŸ‘¦ Equipe BioSentinela
+
+| Nome Completo                        | LinkedIn                                                                 |
+|-------------------------------------|--------------------------------------------------------------------------|
+| Barbara Ayumi Leoni Kodama          | [LinkedIn](https://www.linkedin.com/in/barbara-ayumi-106851262/)        |
+| David Bryan Viana de Sales          | [LinkedIn](https://www.linkedin.com/in/david-sales-60255766/)           |
+| Ana Carolina Carvalho de Paula      | [LinkedIn](https://www.linkedin.com/in/ana-carolina-c-de-paula-153465229/) |
+| Matheus Rodrigo Da Silva Santos     | [LinkedIn](https://www.linkedin.com/in/matheus-rodrigo-s/)              |
+
+---
+
+## âœ… Como Executar
+
+1. Acesse a plataforma via navegador (ou app quando disponÃ­vel).
+2. Cadastre-se ou entre como visitante para visualizar os alertas e dados.
+3. Navegue pelo dashboard para acompanhar os riscos na sua regiÃ£o.
+4. Use o canal de contribuiÃ§Ã£o para reportar ocorrÃªncias locais.
+
+---
+
+## ğŸ“¬ Agradecimentos
+
+**BioSentinela** representa nossa visÃ£o de um futuro mais seguro e saudÃ¡vel. Acreditamos no poder da CiÃªncia de Dados para transformar realidades e proteger quem mais precisa.
 
 Muito obrigado por conhecer nosso projeto!
 
 ---
-
-**Equipe BioSentinela**  
-Barbara Ayumi Leoni Kodama  
-David Bryan Viana de Sales  
-Ana Carolina Carvalho de Paula
-Matheus Rodrigo Da Silva Santos
