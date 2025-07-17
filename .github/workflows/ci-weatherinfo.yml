@@ -8,18 +8,23 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: 📥 Checkout do código
+        uses: actions/checkout@v2
 
-      - name: Setup .NET SDK
+      - name: ⚙️ Configurar .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: '8.0.x'
 
-      - name: Restore dependencies
+      - name: 📦 Restaurar dependências
         run: dotnet restore
 
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
+      - name: 🛠️ Build do projeto
+        run: dotnet build --no-restore
+
+      - name: ✅ Rodar testes 
+        run: dotnet test --no-build --verbosity normal
