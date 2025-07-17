@@ -8,23 +8,22 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
       - name: 📥 Checkout do código
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: ⚙️ Configurar .NET
+      - name: ⚙️ Setup do .NET SDK
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '6.0.x' # Altere aqui se estiver usando outra versão
 
-      - name: 📦 Restaurar dependências
-        run: dotnet restore
+      - name: 📦 Restore das dependências
+        run: dotnet restore WeatherInfo_BioSentinela/WeatherInfo_BioSentinela.csproj
 
       - name: 🛠️ Build do projeto
-        run: dotnet build --no-restore
+        run: dotnet build WeatherInfo_BioSentinela/WeatherInfo_BioSentinela.csproj --no-restore
 
-      - name: ✅ Rodar testes 
-        run: dotnet test --no-build --verbosity normal
+      - name: ✅ Rodar testes
+        run: dotnet test WeatherInfo_BioSentinela/WeatherInfo_BioSentinela.csproj --no-build --verbosity normal
