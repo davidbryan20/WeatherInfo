@@ -1,4 +1,4 @@
-name: CI - WeatherInfo
+name: CI - WeatherInfo (.NET)
 
 on:
   push:
@@ -11,16 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clonar o repositório
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Instalar o SDK do .NET
+      - name: Setup .NET SDK
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '6.0.x'
 
-      - name: Restaurar dependências
+      - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build do projeto
+      - name: Build
         run: dotnet build --configuration Release --no-restore
