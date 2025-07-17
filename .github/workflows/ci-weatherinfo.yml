@@ -17,7 +17,7 @@ jobs:
       - name: ⚙️ Setup do .NET SDK
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.x' # Altere aqui se estiver usando outra versão
+          dotnet-version: '8.0.x'
 
       - name: 📦 Restore das dependências
         run: dotnet restore WeatherInfo_BioSentinela/WeatherInfo_BioSentinela.csproj
